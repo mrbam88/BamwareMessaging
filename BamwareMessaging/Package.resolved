@@ -1,0 +1,24 @@
+{
+  "originHash" : "99490c3127b2f90e4bc99ae05fa2635fa1bbb391fd5b157f1d2c1393b913bf0c",
+  "pins" : [
+    {
+      "identity" : "bamwarecore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mrbam88/BamwareCore.git",
+      "state" : {
+        "revision" : "735e4b6d8c1e3ba5a89392f6f395a675de48c0c7",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "bamwareui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mrbam88/BamwareUI.git",
+      "state" : {
+        "revision" : "c2d06f8b9bdde6cb926c8cfb85371a3138fe2d60",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
