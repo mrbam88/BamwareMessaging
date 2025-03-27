@@ -1,14 +1,17 @@
+import Foundation
 
-import BamwareCore
-
-public struct Message: Codable {
-    public let id: String
+public struct Message: Codable, Identifiable, Equatable {
+    public let id: UUID
+    public let senderId: UUID
+    public let recipientId: UUID
     public let content: String
-    public let tenantID: String
-    
-    public init(id: String, content: String, tenantID: String) {
+    public let timestamp: Date
+
+    public init(id: UUID = UUID(), senderId: UUID, recipientId: UUID, content: String, timestamp: Date = Date()) {
         self.id = id
+        self.senderId = senderId
+        self.recipientId = recipientId
         self.content = content
-        self.tenantID = tenantID
+        self.timestamp = timestamp
     }
 }

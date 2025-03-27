@@ -1,13 +1,22 @@
 {
-  "originHash" : "99490c3127b2f90e4bc99ae05fa2635fa1bbb391fd5b157f1d2c1393b913bf0c",
+  "originHash" : "f6a8b13945e7efffc206187cb051b4ea56769dded5e7f82e2bfa01c47d801748",
   "pins" : [
     {
       "identity" : "bamwarecore",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mrbam88/BamwareCore.git",
       "state" : {
-        "revision" : "735e4b6d8c1e3ba5a89392f6f395a675de48c0c7",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "813cbeb5dc9f06f0b212cc18baa3e4f5092354c9"
+      }
+    },
+    {
+      "identity" : "bamwaresettings",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mrbam88/BamwareSettings.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c0e935b29d8d4539babf5dd71f67a3d92200b2a2"
       }
     },
     {
@@ -15,8 +24,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mrbam88/BamwareUI.git",
       "state" : {
-        "revision" : "c2d06f8b9bdde6cb926c8cfb85371a3138fe2d60",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "0465986db6962326f5834491f7f478cc872f5ec4"
+      }
+    },
+    {
+      "identity" : "grdb.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/GRDB.swift.git",
+      "state" : {
+        "revision" : "2cf6c756e1e5ef6901ebae16576a7e4e4b834622",
+        "version" : "6.29.3"
       }
     }
   ],

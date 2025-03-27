@@ -1,7 +1,6 @@
-
-import BamwareCore
+import Foundation
 
 public protocol MessageRepository {
-    func fetchMessages(forTenantID tenantID: String) async throws -> [Message]
-    func sendMessage(_ message: Message) async throws
+    func send(_ message: Message)
+    func fetchMessages(forUserId userId: UUID) -> [Message]
 }

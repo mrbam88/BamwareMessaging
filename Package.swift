@@ -9,8 +9,8 @@ let package = Package(
         .library(name: "BamwareMessaging", targets: ["BamwareMessaging"])
     ],
     dependencies: [
-        .package(url: "https://github.com/mrbam88/BamwareCore.git", from: "1.0.0"),
-        .package(url: "https://github.com/mrbam88/BamwareUI.git", from: "1.0.0")
+        .package(url: "https://github.com/mrbam88/BamwareCore.git",  branch: "main"),
+        .package(url: "https://github.com/mrbam88/BamwareUI.git",  branch: "main")
     ],
     targets: [
         .target(
