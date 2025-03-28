@@ -1,4 +1,5 @@
 import Foundation
+import BamwareCore
 
 public final class InMemoryMessageRepository: MessageRepository {
     private var messages: [Message] = []
@@ -9,7 +10,9 @@ public final class InMemoryMessageRepository: MessageRepository {
         messages.append(message)
     }
 
-    public func fetchMessages(forUserId userId: UUID) -> [Message] {
-        messages.filter { $0.senderId == userId || $0.recipientId == userId }
+    public func fetchMessages(forUserId userId: UserID) -> [Message] {
+        messages.filter {
+            $0.senderId == userId || $0.recipientId == userId
+        }
     }
 }
